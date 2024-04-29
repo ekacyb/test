@@ -1,2 +1,2 @@
-# test
-test jav
+# pertemuan 5
+java uplod
