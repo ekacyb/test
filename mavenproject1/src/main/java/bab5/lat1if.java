@@ -14,9 +14,10 @@ import java.util.Scanner;
 public class lat1if {
     public static void main(String[] args) {
         int variabel1 = inputNilaiInteger("variabel1");
+        int variabel2 = inputNilaiInteger("variabel2");
         int batasBawah = inputNilaiInteger("batasBawah");
         int batasAtas = inputNilaiInteger("batasAtas");
-        if (variabel1 < batasBawah) {
+        if (variabel1 < variabel2) {
             System.out.println("Variabel1 = "+ variabel1 + "kurang dari batasBawah yang bernilai "+ batasBawah );
         }
         if ((variabel1 < batasBawah) && (variabel1 < batasAtas)) {
