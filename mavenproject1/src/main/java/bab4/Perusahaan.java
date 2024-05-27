@@ -10,5 +10,6 @@ package bab4;
  * @author A-22
  */
 public class Perusahaan {
-
+    String nama = "Pustaka asi";
+    String alamat = "Jalan Jalan";
 }

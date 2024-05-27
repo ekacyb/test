@@ -34,10 +34,13 @@ public class latkelas {
 //        System.out.println(buku1.author);
         System.out.println(buku2.judul);
         System.out.println(buku2.author);
-        
+        buku1.harga.setJual(120000);
         System.out.println(buku1.taper);
-        System.out.println(buku1.harga.beli);
-//        System.out.println(buku1.penerbit.nama);
+        System.out.println(buku1.harga.getbeli());
+        System.out.println(buku1.penerbit.nama);
+        System.out.println("Harga Jual Buku 1 = "+ buku1.harga.getJual());
+        System.out.println("Harga Jual Buku 2 = "+ buku2.harga.getJual());
+        buku1.terjual();
     }
 }
 
@@ -46,10 +49,29 @@ class Buku{
     person author = new person();
     int taper =2024;
     Harga harga = new Harga();
-//    Perusahaan penerbit = new Perusahaaan();
+    Perusahaan penerbit = new Perusahaan();
+    
+    public void terjual(){
+        System.out.println("buku terjual dengan harga: " +harga.getbeli());
+    }
 }
 
 class Harga{
-    double jual = 100000.00;
-    double beli = 80000.00;
+    private double jual = 100000.00;
+    private double beli = 80000.00;
+    
+    public double getbeli(){
+        return beli;
+    }
+    public void setbeli(double beli) {
+        this.beli = beli;
+    }
+    public double getJual() {
+        return jual;
+    }
+
+    public void setJual(double jual) {
+        this.jual = jual;
+    }
+    
 }
